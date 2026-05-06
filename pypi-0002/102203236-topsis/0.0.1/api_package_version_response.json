@@ -1,0 +1,117 @@
+{
+    "info": {
+        "author": "Pranav Khurana",
+        "author_email": "pranavkhurana117@gmail.com",
+        "bugtrack_url": null,
+        "classifiers": [
+            "Development Status :: 4 - Beta",
+            "Intended Audience :: Developers",
+            "License :: OSI Approved :: MIT License",
+            "Programming Language :: Python :: 3",
+            "Programming Language :: Python :: 3.10",
+            "Programming Language :: Python :: 3.7",
+            "Programming Language :: Python :: 3.8",
+            "Programming Language :: Python :: 3.9"
+        ],
+        "description": "# 102203236_Topsis\r\n\r\n## Overview\r\n**TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** is a multi-criteria decision-making (MCDM) method used for ranking and selecting alternatives based on multiple criteria. This Python package allows users to easily apply the TOPSIS method to their datasets.\r\n\r\n## Features\r\n- Reads data from an Excel file.\r\n- Automatically normalizes the data.\r\n- Applies user-defined weights and impacts to criteria.\r\n- Computes the TOPSIS score and ranks alternatives.\r\n- Outputs the final decision-making table with rankings.\r\n\r\n## Installation\r\nInstall the package using pip:\r\n```sh\r\npip install 102203236_Topsis\r\n```\r\n\r\n## Usage\r\n### Import the package\r\n```python\r\nfrom topsis import Topsis\r\n```\r\n\r\n### Example\r\n```python\r\n# Importing the package\r\nfrom topsis import Topsis\r\n\r\n# Define the input parameters\r\nfilename = \"data.xlsx\"\r\nimpacts = ['+','+','+','-','+']\r\nweights = [0.25, 0.25, 0.25, 0.25, 0.25]\r\n\r\n# Run TOPSIS\r\nresult = Topsis(filename, impacts, weights).get_result()\r\n\r\n# Print the ranked result\r\nprint(result)\r\n```\r\n\r\n### Expected Input Format\r\nThe input Excel file should contain numeric data for decision-making criteria. An example format:\r\n| Fund Name | Criterion 1 | Criterion 2 | Criterion 3 | Criterion 4 | Criterion 5 |\r\n|-----------|------------|------------|------------|------------|------------|\r\n| Fund A    | 250        | 3.5        | 1200       | 8          | 85         |\r\n| Fund B    | 275        | 4.0        | 1150       | 7          | 90         |\r\n| Fund C    | 260        | 3.8        | 1250       | 6          | 88         |\r\n\r\n### Output Format\r\nThe output DataFrame includes the original data with additional columns:\r\n- **Score**: Computed TOPSIS score.\r\n- **Rank**: Final ranking based on the score.\r\n\r\n## Dependencies\r\nThis package requires:\r\n- `pandas`\r\n- `numpy`\r\n\r\nThese dependencies will be automatically installed when using `pip install 102203236_Topsis`.\r\n\r\n## License\r\nThis project is licensed under the MIT License.\r\n\r\n## Contributing\r\nPull requests are welcome! If you have suggestions or improvements, feel free to submit an issue or PR.\r\n\r\n## Author\r\n- Name: Pranav Khurana\r\n- GitHub: https://github.com/PranavKhurana117?tab=repositories\r\n- Email: pranavkhurana117@gmail.com\r\n\r\n---\r\nEnjoy using the TOPSIS package! \u00f0\u0178\u0161\u20ac\r\n\r\n",
+        "description_content_type": "text/markdown",
+        "docs_url": null,
+        "download_url": null,
+        "downloads": {
+            "last_day": -1,
+            "last_month": -1,
+            "last_week": -1
+        },
+        "dynamic": [
+            "Author",
+            "Author-Email",
+            "Classifier",
+            "Description",
+            "Description-Content-Type",
+            "Home-Page",
+            "Requires-Dist",
+            "Requires-Python",
+            "Summary"
+        ],
+        "home_page": "https://github.com/PranavKhurana117?tab=repositories",
+        "keywords": null,
+        "license": null,
+        "license_expression": null,
+        "license_files": null,
+        "maintainer": null,
+        "maintainer_email": null,
+        "name": "102203236-Topsis",
+        "package_url": "https://pypi.org/project/102203236-Topsis/",
+        "platform": null,
+        "project_url": "https://pypi.org/project/102203236-Topsis/",
+        "project_urls": {
+            "Homepage": "https://github.com/PranavKhurana117?tab=repositories"
+        },
+        "provides_extra": null,
+        "release_url": "https://pypi.org/project/102203236-Topsis/0.0.1/",
+        "requires_dist": [
+            "pandas",
+            "numpy"
+        ],
+        "requires_python": ">=3.6",
+        "summary": "A Python package for TOPSIS multi-criteria decision making",
+        "version": "0.0.1",
+        "yanked": false,
+        "yanked_reason": null
+    },
+    "last_serial": 27023669,
+    "ownership": {
+        "organization": null,
+        "roles": [
+            {
+                "role": "Owner",
+                "user": "Pranav_Khurana117"
+            }
+        ]
+    },
+    "urls": [
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "c0c5a972e7642d78c1b419a09b106906ccb48b5d818209e95916482f64c89df9",
+                "md5": "58f48593fcdb43d521b6a12ced4ccfa4",
+                "sha256": "ab3fcdc8661555f610ba111991028e8d3f883f3b211253d0153367cf7ca84137"
+            },
+            "downloads": -1,
+            "filename": "102203236_Topsis-0.0.1-py3-none-any.whl",
+            "has_sig": false,
+            "md5_digest": "58f48593fcdb43d521b6a12ced4ccfa4",
+            "packagetype": "bdist_wheel",
+            "python_version": "py3",
+            "requires_python": ">=3.6",
+            "size": 4291,
+            "upload_time": "2025-01-19T13:39:35",
+            "upload_time_iso_8601": "2025-01-19T13:39:35.502508Z",
+            "url": "https://files.pythonhosted.org/packages/c0/c5/a972e7642d78c1b419a09b106906ccb48b5d818209e95916482f64c89df9/102203236_Topsis-0.0.1-py3-none-any.whl",
+            "yanked": false,
+            "yanked_reason": null
+        },
+        {
+            "comment_text": "",
+            "digests": {
+                "blake2b_256": "516e992040e14f47be1aaf4580ac6a7bf81a2eae6664b62ab28b45ecb9368183",
+                "md5": "dcc18b180ddefe0e080587b215fdfa86",
+                "sha256": "2e35799cd08fa9dc362b693bdd8c02921765945b1cafb4376a8aa2c3e1af822a"
+            },
+            "downloads": -1,
+            "filename": "102203236_topsis-0.0.1.tar.gz",
+            "has_sig": false,
+            "md5_digest": "dcc18b180ddefe0e080587b215fdfa86",
+            "packagetype": "sdist",
+            "python_version": "source",
+            "requires_python": ">=3.6",
+            "size": 4035,
+            "upload_time": "2025-01-19T13:39:37",
+            "upload_time_iso_8601": "2025-01-19T13:39:37.643558Z",
+            "url": "https://files.pythonhosted.org/packages/51/6e/992040e14f47be1aaf4580ac6a7bf81a2eae6664b62ab28b45ecb9368183/102203236_topsis-0.0.1.tar.gz",
+            "yanked": false,
+            "yanked_reason": null
+        }
+    ],
+    "vulnerabilities": []
+}
